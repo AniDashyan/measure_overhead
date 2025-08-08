@@ -63,7 +63,7 @@ jobs:
         working-directory: ${{ steps.strings.outputs.build-output-dir }}
         run: |
           if [[ "${{ runner.os }}" == "Windows" ]]; then
-            ./main.exe
+            ./Release/main.exe
           else
             ./main
           fi
